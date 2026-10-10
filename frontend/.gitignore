@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+node_modules/
+.next/
+out/
+build/
+spec-kit-main/
+/package-lock.json
+.env*
+*.pem
