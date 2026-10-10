@@ -1,19 +1,23 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Fira_Sans, Fira_Code } from "next/font/google";
+import localFont from "next/font/local";
 import { SessionProvider } from "@/lib/session";
 import "./globals.css";
 
-const firaSans = Fira_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+const firaSans = localFont({
+  src: [
+    { path: "./fonts/fira-sans-300.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/fira-sans-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/fira-sans-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/fira-sans-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/fira-sans-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-fira-sans",
   display: "swap",
 });
 
-const firaCode = Fira_Code({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const firaCode = localFont({
+  src: "./fonts/fira-code.woff2",
   variable: "--font-fira-code",
   display: "swap",
 });
