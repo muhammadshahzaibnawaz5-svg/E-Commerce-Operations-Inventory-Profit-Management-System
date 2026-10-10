@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+build/
+spec-kit-main/
+/package-lock.json
+.env*
+*.pem
