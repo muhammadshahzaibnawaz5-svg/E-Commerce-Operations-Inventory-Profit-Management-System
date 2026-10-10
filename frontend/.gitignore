@@ -39,6 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
 node_modules/
 .next/
 out/
@@ -47,3 +48,5 @@ spec-kit-main/
 /package-lock.json
 .env*
 *.pem
+=======
+>>>>>>> abc23f65441968553eb02826bfd69b1a9c88247c
